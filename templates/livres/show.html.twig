@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<h1>Livre Details</h1>
+	<div>
+		<h2>{{ livre.titre }}</h2>
+		<p>Editeur:
+			{{ livre.editeur }}</p>
+		<p>ISBN:
+			{{ livre.isbn }}</p>
+
+		<p>Resume:
+			{{ livre.resume }}</p>
+		<img class="rounded" src="{{livre.image}}" alt="image"></img>
+</div>{% endblock %}
